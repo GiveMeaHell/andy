@@ -20,14 +20,21 @@
     function getKode1() {
       var checkKode1 = prompt("Übermittlung ist aktiviert", "Kode hier eintippen");
       if (checkKode1 === "mvt1"){
-      //  document.getElementById('block_versteckt').style.display="block";
+        document.getElementById('springMalHier').style.display="block";
         document.getElementById('getKode1').style.display="none";
+        window.scrollTo(document.getElementById(springMalHier));
+
       }else {
         alert("Kode ist nicht korrekt!");
       }
     };
 
     </script>
+    <style>
+    #springMalHier{
+      display: none;
+    }
+    </style>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -106,9 +113,9 @@
 						<p>Donec leo. Vivamus fermentum nibh in augue. Praesent a lacus at urna congue rutrum.
 						 Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Vestibulum imperdiet, magna nec eleifend
 						 semper augue mattis wisi maecenas ligula nunc lectus vestibulum euismod lacinia quam nisl.</p>-->
-
-							<a href="3.html" class="button">Sicher!</a>
               <a href="#" id="getKode1" class="button" onclick="getKode1()">Ermittler-Device starten</a>
+              <span class="byline" id = "springMalHier">"Es läuft!" - zischte erfreulich Hash. "Die Stromversorgung ist wieder da. Toll gemacht! Sag Bescheid wenn du bereit bist"
+              <a href="4.html" class="button">Klar bin ich bereit, das macht Spaß!:)</a></span>
 						</div>
 					</div>
 				</section>
