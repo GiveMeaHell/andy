@@ -20,9 +20,11 @@
     <script>
 
     function getKode2() {
-      var checkKode2 = prompt("Stromeinspeisung Befehl", "");
-      if (+checkKode2 === 150){
-        window.location = "5.html";
+      var checkKode2 = prompt("Geben Sie Quantum-Modifikator ein", "");
+      var checkKode3 = "0" + "," + "5";
+      //checkKode3.toString();
+      if (checkKode2 === checkKode3){
+        window.location = "6.html";
         //document.getElementById('springMalHier').style.display="block";
         //document.getElementById('getKode1').style.display="none";
 
@@ -30,13 +32,13 @@
       //  scrollTop: $("#springMalHier").offset().top
   //  }, 2000);
       }else {
-        alert("Fehler! Überprüfen Sie Ihre Werte!");
+        alert("Fehler! Dezimalzahl wird erwartet");
       }
     };
 
     function getKode1() {
       var checkKode1 = prompt("Übermittlung ist aktiviert", "");
-      if (checkKode1 === "twinit"){
+      if (checkKode1 === "naviinit"){
         document.getElementById('springMalHier').style.display="block";
         document.getElementById('getKode1').style.display="none";
 
@@ -66,7 +68,7 @@
 	<body class="homepage">
 
 		<!-- Header Wrapper -->
-			<div class="wrapper style1" style="background:#222222 url(https://givemeahell.github.io/andy/images/map2.png) no-repeat">
+			<div class="wrapper style1" style="background:#222222 url(https://givemeahell.github.io/andy/images/map3.png) no-repeat">
 
 			<!-- Header -->
 				<div id="header">
@@ -124,9 +126,11 @@
 					<div class="row double">
 						<div class="6u">
 							<header class="major">
-								<h2>Andy merkt dass Marker auf der Karte hat seine Position geändert...</h2>
-								<span class="byline">"So, dank dir Andy, haben wir jetzt Strom, meine Tests zeigen, dass wir jetzt Treibwerk einstellen können" - sagte Hash.
-                  "Ich brauche ein weiteres Kodestück um Treibwerk zu initialisieren, die Koordinaten sind auf der Karte, viel Glück Andy!" </span>
+								<h2>Marker auf der Karte springt wieder zu neuer Position.</h2>
+								<span class="byline">"Treibwerk speichert nun die Energie. Danke Andy, toll hast du das gemacht. Jetzt verstehe ich warum ich Mathe in der Schule lernen sollte"
+                  - sagte Hash ganz froh.
+                  "Als Letztes brauchen wir noch das Navigationsystem starten und einzustellen. Das Kodestück habe ich in deiner Nähe entdeckt. Koordinaten sind auf der Karte.
+                  Los geht es, Andy! Vergesse nicht die Kode in den Ermittler einzutippen." </span>
 							</header>
 						</div>
 						<div class="6u">
@@ -135,11 +139,13 @@
 						 Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Vestibulum imperdiet, magna nec eleifend
 						 semper augue mattis wisi maecenas ligula nunc lectus vestibulum euismod lacinia quam nisl.</p>-->
               <a href="#" id="getKode1" class="button" onclick="getKode1()">Ermittler-Device starten</a>
-              <span class="byline" id = "springMalHier" style="color:red">"Och ne, um Initialisierung fertig zu stellen, soll ich die Strommenge für das Galaktische Sprung einzugeben."
-                 - sagte bedauerlich Hash. "Treibwerk soll genau wissen wie viel braucht er einzuspreisen bevor wir rausfliegen. Ich habe Notizen, wo steht wie man diese Menge berechnet.
-                 Aber ich habe leider keine Mathe in der Schule gelernt und kann nichts damit anfangen. Kannst du das vielleicht verstehen?". Andy schaut in die Notizen, da steht : Um von Erde
-                  Nach Heimat zu springen braucht man 50% von 300 SuperWatt einzuspeisen.
-              <a href="#" id="getKode2" class="button" onclick="getKode2()">"Hash!" - sagt Andy. "Ich verstehe das wohl. Lass mich mal die Wert einzugeben."</a></span>
+              <span class="byline" id = "springMalHier" style="color:red">"Super! Navi läuft wieder. Ich muß die Koordinaten noch einzugeben."
+                 - sagt Hash. "Navigationsystem sorgt dafür, dass wir während nach dem Sprung an die richtige Stelle kommen. Alle nötige Berechnungen macht das System selbst, ich
+                 muß nur am Ende die ausgerechnete Quantum-Modifikatorzahl in das Systemkern übermitteln. Aber das klappt nicht, Andy! Kannst du
+                 vielleicht erkennen woran das Problem liegt?" Andy schaut auf das Systemkern-Device, da steht : Ihr Quantum-Modifikatorzahl lautet 1/2... Achtung!
+                 Systemkern kann nur mit Dezimalzahlen arbeiten! Achtung!
+                 Systemkern kann nur mit Dezimalzahlen arbeiten!
+              <a href="#" id="getKode2" class="button" onclick="getKode2()">"Ach sooo" - sagt Andy. "Ich glaube ich weiss woran das Problem liegt :)"</a></span>
 						</div>
 					</div>
 				</section>
