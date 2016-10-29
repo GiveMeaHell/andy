@@ -16,6 +16,18 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+    <script>
+    function getKode1() {
+      var checkKode1 = prompt("Übermittlung ist aktiviert", "Kode hier eintippen");
+      if (checkKode1 === "mvt1"){
+      //  document.getElementById('block_versteckt').style.display="block";
+        document.getElementById('getKode1').style.display="none";
+      }else {
+        alert("Kode ist nicht korrekt!");
+      }
+    };
+
+    </script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -83,11 +95,10 @@
 					<div class="row double">
 						<div class="6u">
 							<header class="major">
-								<h2>Hash30102016 sieht hoffnungsvoll auf Andy.</h2>
-								<span class="byline">In skripten haben wir Kodestücke für manuelle Eingabe, exact für den Fall wenn es Rechner kaputt geht. Mäuschen hat die Stücke
-                gestohlen aber es ist nicht so schlimm. Wir haben kleine Signalsender auf jede Kodestück, und können diese ziemlich genau orten! Alles was du brauchst ist,
-              nach meine Karte das Kodestück finden. Und dann die Kode in das Ermittler-Device eintippen. Ach noch einiges. Die Reihenfolge ist sehr wichtig! Jedes System in unserem
-            Raumschiff initialisiert sich in einer bestimmten Ordnung. Aber ich sorge schon dafür:) . Bist du bereit?  </span>
+								<h2>Hash ist verschwunden und jetzt sieht Andy eine Karte vor sich</h2>
+								<span class="byline">"Khm khm! Test - test!" - kamm von der Seite der Karte. "Hash30102016 ist hier" zischte schon bekannte Stimme mit metallischen Noten.
+                 Andy nahm die Karte zu sich. "Ich schicke dir die Koordinaten von dem ersten Kodestück, finde den bitte. Soweit ich sehe das ist nicht weit von dir.
+                 Vergesse nicht die Kode dann in Ermittler einzugeben. Bis bald, Andy!"</span>
 							</header>
 						</div>
 						<div class="6u">
@@ -97,6 +108,7 @@
 						 semper augue mattis wisi maecenas ligula nunc lectus vestibulum euismod lacinia quam nisl.</p>-->
 
 							<a href="3.html" class="button">Sicher!</a>
+              <a href="#" id="getKode1" class="button" onclick="getKode1()">Ermittler-Device starten</a>
 						</div>
 					</div>
 				</section>
