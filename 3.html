@@ -19,24 +19,15 @@
 
     <script>
 
-    function scrollToElement(theElement) {
-        if (typeof theElement === "string") theElement = document.getElementById(theElement);
-        var selectedPosX = 0;
-        var selectedPosY = 0;
-        while (theElement != null) {
-            selectedPosX += theElement.offsetLeft;
-            selectedPosY += theElement.offsetTop;
-            theElement = theElement.offsetParent;
-        }
-        window.scrollTo(selectedPosX, selectedPosY);
-      };
     function getKode1() {
       var checkKode1 = prompt("Übermittlung ist aktiviert", "Kode hier eintippen");
       if (checkKode1 === "mvt1"){
         document.getElementById('springMalHier').style.display="block";
         document.getElementById('getKode1').style.display="none";
-        scrollToElement('springMalHier');
 
+        $('html, body').animate({
+        scrollTop: $("#springMalHier").offset().top
+    }, 2000);
       }else {
         alert("Kode ist nicht korrekt!");
       }
