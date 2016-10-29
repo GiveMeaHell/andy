@@ -22,7 +22,8 @@
       if (checkKode1 === "mvt1"){
         document.getElementById('springMalHier').style.display="block";
         document.getElementById('getKode1').style.display="none";
-        window.scrollTo(document.getElementById(springMalHier));
+        var springMarke = document.getElementById(springMalHier);
+        window.scrollTo(springMarke.offsetLeft, springMarke.offsetTop);
 
       }else {
         alert("Kode ist nicht korrekt!");
